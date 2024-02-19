@@ -1,0 +1,132 @@
+:root {
+    --background-color-primary: #16171D;
+    --background-color-secondary: #1E1F29;
+    --background-color-light-gray: #2E2D3D;
+    --background-color-dark-gray: #101114;
+    --color-primary: #6C38CC;
+    --color-primary-hover: #7d48e0;
+    --color-secondary: #E47AD5;
+    --text-color-primary: #FAFAFA;
+    --text-color-secondary: #AFB2BF;
+    --gradient: linear-gradient(93deg, #D77BE5 9.26%, #BE63E5 42.32%, #6C38CC 104.58%);
+    --border-color: #4D5064;
+    --padding-24: 24px;
+    --padding-16: 16px;
+}
+
+html {
+    background-color: var(--background-color-primary);
+}
+
+.page-section {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-section_light-gray {
+    background-color: var(--background-color-secondary);
+}
+
+.section-content {
+    width: 100%;
+    max-width: 1220px;
+}
+
+/* body {
+    max-width: 1512px;
+    margin: auto;
+} */
+
+p, h1, h2, h3, h4, a {
+    color: var(--text-color-primary);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+
+.text-paragraph {
+    max-width: 786px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.paragraph-small {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.paragraph-gray {
+    color: var(--text-color-secondary);
+}
+
+.icon-s {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-m {
+    width: 24px;
+    height: 24px;
+}
+
+.button-primary {
+    padding: 16px 32px;
+    background-color: var(--color-primary);
+    color: var(--text-color-primary);
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.4s;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.button-secondary {
+    padding: 16px 32px;
+    background-color: transparent;
+    color: var(--text-color-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.4s;
+}
+
+.button-secondary:hover {
+    background-color: var(--background-color-light-gray);
+}
+
+
+/* #region Adaptive */
+@media (max-width: 360px) {
+    .button-primary, .button-secondary {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    .h4 {
+        font-size: 21px;
+    }
+
+    .page-section {
+        padding: 40px 24px;
+    }
+}
+/* #endregion */

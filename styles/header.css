@@ -1,0 +1,80 @@
+.header {
+    /* position: fixed; */
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    padding: 10px 0 10px 0;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    max-width: 453px;
+    display: flex;
+    flex-direction: row;
+    gap: calc(56px - 32px);
+    align-items: center;
+}
+
+.menu-link {
+    padding: 8px 16px;
+    color: var(--text-color-primary);
+    transition: color 0.2s;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.menu-link:hover {
+    color: var(--text-color-secondary);
+}
+
+.menu-link:active {
+    border: solid 1px var(--border-color);
+    border-radius: 8px;
+}
+
+.menu__list-item {
+    transition: color 0.2s;
+}
+
+/* .menu__list-item:active {
+    border: solid 1px var(--border-color);
+    border-radius: 8px;
+} */
+
+.user-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-purpleschool {
+    max-width: 233px;
+}
+
+.header__mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .menu__list, .user-account {
+        display: none;
+    }
+
+    .header__mobile-menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-purpleschool {
+        max-width: 174px;
+    }
+}
